@@ -1,0 +1,9 @@
+For this discussion, I chose a simple embedded system: a motion-sensor trash can. When I first got one, I laughed at the idea because it seemed unnecessary. Now, I sometimes catch myself waving my hand in front of trash cans that must be opened manually. It is a small example of how embedded systems can reshape the way we interact with everyday objects.
+
+The trash can works similarly to an automatic door. In simple terms, the motion sensor tells the controller, “Someone is here,” and the timer tells it, “Enough time has passed.” When the sensor detects a hand, it sends a signal to the microcontroller. This signal can be handled as an external interrupt, causing the controller to pause its normal operation and activate the motor that opens the lid. External interrupts allow a system to respond quickly to unpredictable events instead of constantly checking whether something has happened (Neagoe, 2023).
+
+After the lid opens, the controller starts a timer. When the timer reaches its programmed limit—approximately 10 seconds on my trash can—it can generate an internal interrupt that tells the system to close the lid. If the sensor detects another object before the countdown ends, the controller may restart the timer so that the lid remains open. The interrupt itself is not prolonged; instead, the new sensor event changes or resets the countdown. This design is simple but efficient because the processor only needs to respond when the sensor detects movement or the timer expires. It provides a clear example of how external interrupts respond to events in the environment while internal timer interrupts control when a time-based action occurs.
+
+Reference
+
+Neagoe, G. (2023). Interrupts and timers. In The embedded programmer’s user manual. https://masterembedded.com/chapter_13.html

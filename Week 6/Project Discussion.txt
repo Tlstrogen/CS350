@@ -1,0 +1,5 @@
+I do not have any questions regarding the project at this time. For anyone struggling with this project, you may have to rewire the buttons from Assignment 5. In my case, the guide did not use the same breadboard layout that I had, which made some of the wiring instructions difficult to follow.
+
+I did not document every change I made, but I ran into issues because some of the locations shown in the guide would have caused the buttons to collide with the GPIO board on my setup. I think the course guide could benefit from being updated to better reflect the breadboards we received. I ended up using ChatGPT to help invert the board layout so that I could get the components positioned correctly.
+
+For anyone who has not started the project yet, be aware that the wiring can be frustrating and may take some time to troubleshoot. It took me approximately four hours to get everything wired correctly. My main recommendation would be to pay close attention to the differences between the breadboard shown in the guide and the one you are actually using.
